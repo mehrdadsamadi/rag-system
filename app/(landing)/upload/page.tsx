@@ -47,7 +47,7 @@ export default function Upload() {
             <label
                 className="w-80 h-40 flex items-center justify-center border-2 border-dashed border-gray-400 rounded-lg cursor-pointer hover:bg-gray-100 transition">
                 <input type="file" onChange={handleFileChange} className="hidden"/>
-                <span className="text-gray-600">{file ? file.name : "برای آپلود کلیک کنید یا فایل را درگ کنید"}</span>
+                <span className="text-gray-600">{file ? file.name : "برای آپلود کلیک کنید"}</span>
             </label>
 
             {/* دکمه آپلود */}

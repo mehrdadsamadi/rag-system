@@ -28,8 +28,8 @@ export default function Chat() {
     };
 
     return (
-        <div className="flex flex-col items-center p-6 w-full max-w-md mx-auto">
-            <div className="w-full h-80 border p-2 overflow-y-auto bg-gray-100 text-black">
+        <div className="flex flex-col items-center p-6 w-full mx-auto">
+            <div className="w-full h-80 border p-2 overflow-y-auto text-white rounded-lg">
                 {messages.map((msg, i) => (
                     <div key={i} className="p-1">
                         {msg}
@@ -42,7 +42,7 @@ export default function Chat() {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-                    className="flex-1 p-2 border text-black"
+                    className="flex-1 p-2 border text-black rounded-lg"
                     placeholder="سوال خود را بپرسید..."
                 />
                 <button onClick={sendMessage} className="ml-2 p-2 bg-blue-500 text-white rounded-lg">
